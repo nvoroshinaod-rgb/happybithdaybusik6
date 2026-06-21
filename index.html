@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
-    <title>Квест для Надюши 🎉</title>
+    <title>Квест от Надюши 🎉</title>
     <style>
         /* ---------- RESET & GLOBAL ---------- */
         * {
@@ -626,8 +626,9 @@
         <!-- ТЕКСТ НАВЕРХУ (смайлики убраны) -->
         <div class="greeting" id="greeting">
             <p>
-                Котятки очень старались, а Котя им подсказывала, даже зайчика Войковского запрягла 🐰.<br />
-                Думаем, что Коте полагается чмока 💋. Как только сделаешь, жми на кнопку 👇 и отвечай на следующий вопрос!
+                Ты - невероятный мужчина. Самый лучший для самой лучшей Коти 💋<br />
+                Одним словом прям ❤️БУСИК❤️ (читать с нашей интонацией)<br />
+                И для получения приза давай двигаться дальше - отвечай на ещё один вопрос!
             </p>
         </div>
 
@@ -635,19 +636,21 @@
         <div class="quest-area">
 
             <!-- КНОПКА "Чмока выдана" -->
-            <button class="btn-ready" id="btnReady">Чмока выдана</button>
+            <button class="btn-ready" id="btnReady">Ехала!</button>
 
             <!-- ВОПРОС -->
             <div class="question-text" id="questionText">
-                Что Надюше нельзя делать с бокалами?
+                Как ты знаешь, Надюша ооочень любит цветочки, а ты их поэтому регулярно ей даришь, чем безумно радуешь!😍<br />
+                И каждый раз твоя дорогая очень не любит расставаться с ними. <br />
+                Продолжи фразу цветочек нужно ...
             </div>
 
             <!-- ВАРИАНТЫ ОТВЕТОВ -->
             <div class="options-grid" id="optionsGrid">
-                <button class="option-btn" data-index="0">Мыть</button>
-                <button class="option-btn" data-index="1">Пить из них</button>
-                <button class="option-btn" data-index="2">Покупать новые</button>
-                <button class="option-btn" data-index="3">Натирать</button>
+                <button class="option-btn" data-index="0">Поливать</button>
+                <button class="option-btn" data-index="1">Обожать</button>
+                <button class="option-btn" data-index="2">Обнимать</button>
+                <button class="option-btn" data-index="3">Нюхать</button>
             </div>
 
             <!-- ФИДБЕК -->
@@ -766,7 +769,7 @@
                     optionBtns.forEach(b => b.disabled = true);
                     btn.classList.add('correct');
                     showFeedback(
-                        'Да-да, всё так. Хихик) Следующий Qr-код ищи в гардеробной в спальне',
+                        'Даааа, попроси ещё раз Котю сказать это её милым голосом) А сам ищи Qr-код рядом с телевизором',
                         true
                     );
                     // Запускаем конфетти (взрыв хлопушки)
@@ -775,7 +778,7 @@
                     // Неправильный ответ
                     btn.classList.add('wrong');
                     showFeedback(
-                        'Подсказка: даже Ника это подметила, что в нашем доме нельзя бокалы ..., а то ...',
+                        'Подсказка: охх, думаю ты случайно нажал не туда',
                         false
                     );
                 }
